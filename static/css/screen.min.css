@@ -1099,7 +1099,7 @@ label {
 }
 
 /* ============= SLIDESHOW ============= */
-.mySlides {display:none}
+.mySlides, .mySlides2 {display:none}
 
 /* Slideshow container */
 .slideshow-container {
@@ -1112,11 +1112,9 @@ label {
 /* Caption text */
 .text {
   font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
   text-align: center;
+  color: #001d60;
+  font: small-caption;
 }
 
 /* Number text (1/3 etc) */
@@ -1129,7 +1127,7 @@ label {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot, .dot2 {
   height: 13px;
   width: 13px;
   margin: 0 2px;
@@ -1146,9 +1144,14 @@ label {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
+}
+
+.galleryImg {
+	width: 380px;
+	height: 230px;
 }
 
 @-webkit-keyframes fade {
@@ -1169,19 +1172,29 @@ label {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 29.99999%;
+    margin: 0 5%;
+    /*width: 29.99999%;*/
 }
 
 @media only screen and (max-width: 700px){
     .responsive {
-        width: 49.99999%;
+        /*width: 49.99999%;*/
         margin: 6px 0;
+    }
+    .galleryImg {
+    	width: auto;
+    	height: 180px;
     }
 }
 
 @media only screen and (max-width: 500px){
     .responsive {
-        width: 100%;
+        /*width: 100%;*/
+    }
+
+    .galleryImg {
+    	width: 100%;
+    	height: 160px;
     }
 }
 </style>
