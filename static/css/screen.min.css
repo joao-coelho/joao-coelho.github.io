@@ -509,48 +509,20 @@ body{
 }
 .portfolio__item-title:before{
 	content:"+";
-	display:block;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 	width:40px;
 	height:40px;
 	-webkit-border-radius:50%;
 	border-radius:50%;
 	margin:0 auto 20px;
-	padding-top:10px;
-	background-color:#ccc;
 	background-color:rgba(0,0,0,.5);
 	font-family:FontAwesome;
-	text-align:center
 }
 .portfolio__item-cat{
 	display:block;
 	font-size:12px
-}
-.__item-title:before{
-	/*content:"+";*/
-	display:block;
-	width:40px;
-	height:40px;
-	/*-webkit-border-radius:50%;
-	border-radius:50%;*/
-	margin:0 auto 20px;
-	padding-top:10px;
-	background-color:#ccc;
-	background-color:rgba(0,0,0,.5);
-	font-family:FontAwesome;
-	text-align:center
-}.portfolio__item-title:before{
-	/*content:"+";*/
-	display:block;
-	width:40px;
-	height:40px;
-	/*-webkit-border-radius:50%;
-	border-radius:50%;*/
-	margin:0 auto 20px;
-	padding-top:10px;
-	background-color:#ccc;
-	background-color:rgba(0,0,0,.5);
-	font-family:FontAwesome;
-	text-align:center
 }
 .promo{
 	text-align:center;
