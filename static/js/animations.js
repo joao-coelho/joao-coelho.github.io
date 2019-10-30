@@ -315,61 +315,48 @@ $('#emailRef').attr('data-clipboard-text', "jccoelho96@gmail.com");
 
 // ================================ GALLERY SLIDESHOW ======================================
 
-/*function showSlides(start, n, slideIndex) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = start; i < start + n; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > start + n) {slideIndex = start+1}
-    for (i = start; i < start + n; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides(start, n, slideIndex), 2000); // Change image every 2 seconds
-}
-
-function startShow(start, n) {//start - index of the beggining, n - number of correspondences
-	var slideIndex = start;
-	showSlides(start, n, slideIndex);
-}*/
-
 function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2500); // Change image every 3 seconds
+  var slides = document.getElementsByClassName("mySlides");
+  var dots   = document.getElementsByClassName("dot");
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 3 seconds
 }
 
 function showSlides2() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides2");
-    var dots = document.getElementsByClassName("dot2");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex2++;
-    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex2-1].style.display = "block";  
-    dots[slideIndex2-1].className += " active";
-    setTimeout(showSlides2, 2500); // Change image every 3 seconds
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots   = document.getElementsByClassName("dot2");
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex2++;
+
+  if (slideIndex2 > slides.length) {
+    slideIndex2 = 1;
+  }
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active";
+  setTimeout(showSlides2, 2500); // Change image every 3 seconds
 }
-
-
-//===========================================================================================
